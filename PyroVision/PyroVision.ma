@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: PyroVision.ma
-//Last modified: Tue, Aug 06, 2024 07:59:29 PM
+//Last modified: Tue, Aug 06, 2024 08:00:01 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "5CFDE3AB-4A4C-9A32-F0C8-52ADE7A0A512";
+fileInfo "UUID" "20B74D09-420F-7357-183E-07B9F6C2B7D9";
 createNode transform -s -n "persp";
 	rename -uid "BDB1080C-4E6C-F1F5-BF4E-E3BB94457C78";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.848900687472929 17.048749541804714 29.053077803563898 ;
+	setAttr ".t" -type "double3" 31.923655276311777 37.870571780307095 89.571529393564077 ;
 	setAttr ".r" -type "double3" -18.000000000000327 -2500.7999999981771 -4.2098611074668039e-16 ;
 	setAttr ".rpt" -type "double3" 1.2302975627061159e-15 6.979121147664349e-16 1.6459936502380513e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BB13F3FF-4D55-C615-DC73-1AB700B60568";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 34.133624930506649;
+	setAttr ".coi" 101.51445710971601;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -15793,7 +15793,7 @@ createNode phong -n "VisionOrb";
 	setAttr ".c" -type "float3" 0.2375 0.061299998 0.0231 ;
 	setAttr ".it" -type "float3" 0.16025642 0.16025642 0.16025642 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "4B891AEA-40F2-CC3C-0A88-CD899A8129E5";
+	rename -uid "BCA5C59B-4160-06BB-F958-6BB551580FC2";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
